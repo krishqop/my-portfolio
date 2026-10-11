@@ -23,18 +23,17 @@ function Projects() {
       description:
         "A web application that helps users check their resumes and understand ATS requirements.",
       icon: <DescriptionIcon sx={{ fontSize: 55 }} />,
-      tech: ["React", "JavaScript", "MUI"],
+      tech: ["Html","css", "JavaScript",],
       link: "https://ats-resume-checker-gules.vercel.app",
       color: "#00d9ff",
     },
     {
-      title: "Amazon UI Clone",
+      title: "My Portfolio",
       description:
-        "An Amazon-inspired frontend project created to practice website layout and styling.",
-      icon: <ShoppingCartIcon sx={{ fontSize: 55 }} />,
-      tech: ["HTML", "CSS", "JavaScript"],
-      link: "",
-      color: "#ffb347",
+       " My personal developer portfolio built with React.js and Material UI,showcasing my skills, projects, and learning journey in frontend development and MERN Stack.",
+      tech: ["React.js"],
+      link: "https://my-portfolio-mu-one-49.vercel.app",
+      color: "#00d9ff",
     },
     {
       title: "Netflix Clone",
@@ -151,7 +150,6 @@ function Projects() {
                 sx={{
                   p: { xs: 2, sm: 2.5, md: 3 },
                   flexGrow: 1,
-                  minHeight: 0,
                   display: "flex",
                   flexDirection: "column",
                   "&:last-child": { pb: 3 },
@@ -162,7 +160,7 @@ function Projects() {
                   direction="row"
                   spacing={2}
                   sx={{
-                    minWidth: 0,
+                    // minWidth: 0,
                     flexGrow: 1,
                   }}
                 >
@@ -273,10 +271,6 @@ function Projects() {
                     "&:hover": {
                       background:
                         "linear-gradient(90deg, #54ffff, #39bdff)",
-                    },
-                    "&.Mui-disabled": {
-                      color: "#8494aa",
-                      backgroundColor: "#26344b",
                     },
                   }}
                 >

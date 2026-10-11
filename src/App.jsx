@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 const Home = React.lazy(() => import('./components/Home'));
 const About = React.lazy(() => import('./components/About'));
 const Qualification = React.lazy(() => import('./components/Qualification'));
@@ -14,8 +14,10 @@ function App() {
     <>
     <BrowserRouter>
 
+    <Suspense fallback={<div>Loding portfolio...</div>}>
+    
     <Navigation/>
-  
+    
         {/* <Link to={'/'}>Home</Link>{"  "}
         <Link to={'/about'}>About</Link>{"  "}
         <Link to={'/qualification'}>Qualification</Link>{"  "}
@@ -30,8 +32,9 @@ function App() {
             <Route path='/Contact' element={<Contact/>}/>
 
         </Routes>
+    </Suspense>
+
     </BrowserRouter>
-    
     </>
   )
 }
