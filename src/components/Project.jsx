@@ -32,6 +32,19 @@ function Projects() {
       description:
        " My personal developer portfolio built with React.js and Material UI,showcasing my skills, projects, and learning journey in frontend development and MERN Stack.",
       tech: ["React.js"],
+      icon:(
+        <Box
+         component="img"
+        src="/Krishna.jpeg"
+        alt="My portfolio"
+        sx={{
+          width:"100%",
+          height:"100%",
+          objectFit:"cover",
+          borderRadius:3,
+        }}
+        /> 
+      ),
       link: "https://my-portfolio-mu-one-49.vercel.app",
       color: "#00d9ff",
     },
@@ -64,10 +77,10 @@ function Projects() {
       backgroundImage: "url(./About.jpeg)",  
       }}
     >
-      <Container maxWidth="lg">
+      <Container>
         {/* HEADING */}
         <Stack
-          alignItems="center"
+          // alignItems="center"
           spacing={1.5}
           sx={{ mb: { xs: 4, md: 6 } }}
         >
@@ -222,7 +235,6 @@ function Projects() {
                 {/* TECHNOLOGY CHIPS */}
                 <Stack
                   direction="row"
-                  flexWrap="wrap"
                   gap={1}
                   sx={{
                     mt: 2,
