@@ -1,0 +1,222 @@
+body{
+    color: white;  
+    background: black;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  position: sticky;
+  margin: -8px;
+  background: rgba(8,12,35,0.75);
+  backdrop-filter: blur(12px);
+ -webkit-backdrop-filter: blur(12px);
+ border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+.logo {
+  font-size: 28px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+
+
+
+
+.about-section {
+  min-height: 100vh;
+  padding: 100px 8%;
+  background: #050505;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Heading */
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-heading .MuiTypography-overline {
+  letter-spacing: 4px;
+  color: #888;
+}
+
+.about-heading h2 {
+  font-size: 55px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.about-heading h2 span {
+  color: #00e5ff;
+}
+
+.heading-line {
+  width: 70px;
+  height: 4px;
+  background: #00e5ff;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+/* Introduction */
+
+.about-intro {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-intro h4 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.about-intro h4 span {
+  color: #00e5ff;
+}
+
+.about-intro p {
+  color: #bdbdbd;
+  line-height: 1.8;
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+
+/* Cards */
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 60px;
+}
+
+.about-card {
+  padding: 35px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(15px);
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow */
+
+.about-card::before {
+  /* content: ""; */
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: #00e5ff;
+  filter: blur(80px);
+  opacity: 0;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+
+/* .about-card:hover::before {
+  opacity: 0.15; 
+} */
+
+.about-card:hover {
+  transform: translateY(-10px);
+  border-color: #00e5ff;
+  box-shadow: 0 15px 40px rgba(0, 229, 255, 0.15);
+}
+
+/* Icon */
+
+.about-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00e5ff;
+  border: 1px solid rgba(0, 229, 255, 0.4);
+  background: rgba(0, 229, 255, 0.08);
+}
+
+.about-icon svg {
+  font-size: 30px;
+}
+
+.about-card h6 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.about-card p {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-heading h2 {
+    font-size: 42px;
+  }
+
+  .about-section {
+    padding: 80px 6%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-heading h2 {
+    font-size: 36px;
+  }
+
+  .about-intro h4 {
+    font-size: 26px;
+  }
+
+  .about-intro p {
+    font-size: 15px;
+  }
+
+  .about-card {
+    padding: 30px 20px;
+  }
+}
