@@ -15,8 +15,8 @@ function Navigation() {
   const [menu, setMenu] = useState(false);
 
   const links = [
-    { name: "Home", path: "/", icon: <HomeIcon /> },
-    { name: "About", path: "/about", icon: <PersonIcon /> },
+    { name: "Home", path: "/",icon:<HomeIcon /> },
+    { name: "About", path: "/about", icon:<PersonIcon /> },
     { name: "Qualification", path: "/qualification", icon: <SchoolIcon /> },
     { name: "Projects", path: "/project", icon: <CodeIcon /> },
     { name: "Contact", path: "/Contact", icon: <ContactMailIcon /> },
@@ -90,7 +90,7 @@ function Navigation() {
             sx={{
               display: "flex",
               alignItems: "center",
-              gap: 1,
+              gap: 0.2,
               color: "white",
               textDecoration: "none",
               "&:hover": { color: "#38bdf8" },
