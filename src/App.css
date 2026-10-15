@@ -3,7 +3,7 @@ body{
     background: black;
 }
 
-.navbar {
+/* .navbar {
   height: 80px;
   display: flex;
   align-items: center;
@@ -36,6 +36,19 @@ body{
 .nav-links a:hover {
   color: #38bdf8;
 }
+
+@media (max-width:600px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+@media (max-width:600px) {
+   .nav-links {
+
+  }
+} */
+
 
 
 
