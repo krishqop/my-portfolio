@@ -25,7 +25,7 @@ function About() {
 
   return (
     <Box className="about-section"
-    sx={{backgroundImage: "url(./About.jpeg)",  
+    sx={{backgroundImage: "url(./About.jpeg)", 
     }}
     >
       <Box className="about-container">

@@ -13,7 +13,7 @@ function Home() {
    return (
       <Box
       sx={{
-      minHeight: "100vh",
+      minHeight: "87vh",
       display: "flex",
       alignItems: "center",
       backgroundImage: "url(./Home1.jpeg)",
@@ -70,7 +70,7 @@ function Home() {
           color: "#ddd",
         }}
       >
-        MERN Stack Developer
+        Aspiring MERN Stack Developer
       </Typography>
 
       {/* Description */}

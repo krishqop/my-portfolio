@@ -54,7 +54,7 @@ function Navigation() {
           flexGrow: { xs: 1, md: 0 },
         }}
       >
-        Krishnaram.
+        Krishna.dev
       </Typography>
 
       {/* MENU ICON */}
